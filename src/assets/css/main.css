@@ -1,0 +1,203 @@
+
+/*fonts*/
+@font-face {
+  font-family: "IranSans";
+  src: url("../fonts/iranSans/eot/IRANSansWeb(FaNum).eot");
+  src: url("../fonts/iranSans/woff/IRANSansWeb(FaNum).woff") format("woff"), url("../fonts/iranSans/ttf/IRANSansWeb(FaNum).ttf"), url("../fonts/iranSans/woff2/IRANSansWeb(FaNum).woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "yekan";
+  src: url("../fonts/yekan-font/Yekan.eot");
+  src: url("../fonts/yekan-font/Yekan.ttf"),url("../fonts/yekan-font/Yekan.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "IranSans";
+  scroll-behavior: smooth;
+}
+html , body{
+  padding: 0;
+  margin: 0;
+  direction: ltr;
+  text-align: left;
+}
+body{
+  font-family: "IranSans";
+  background-color: darkslategray;
+}
+a{
+  text-decoration: none;
+  font-family: "IranSans";
+}
+h1,h2,h3,h4,h5,h6{
+  padding: 0;
+  margin: 0;
+}
+ul{
+  list-style: none;
+}
+.container--fluid{
+  padding: 0;
+}
+
+
+/*navbar start*/
+.header{
+  text-align: center;
+  padding: 1%;
+  background-color: darkslategray;
+  color: #fff;
+}
+.bars{
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-menu .menu-list {
+  height: 100%;
+  width: 100%;
+  padding: .5%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-menu .menu-list li {
+  height: 100%;
+  width: 100px;
+  float: right;
+}
+.header-menu .menu-list li a {
+  color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.header-menu .menu-list li a.active {
+  color: wheat;
+  background-color: #8019c8;
+}
+.header-menu .menu-list li a:hover{
+  text-decoration: none;
+}
+
+.header-options .icons{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-options .icons i{
+  font-size: 16px;
+  margin: 0 10px;
+  color: #8019c8;
+}
+@media all and (max-width: 992px){
+  .header-menu{
+    display: none;
+  }
+}
+
+
+/*side bar*/
+.side-bar {
+  background-color: dimgray;
+  padding: 1% 0;
+  height: 89vh;
+}
+.mobile-size{
+  display: none;
+}
+.sidebar-menu ul{
+  width: 100%;
+  padding: 0;
+}
+.sidebar-menu ul li{
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar-menu ul li:hover{
+  background-color: #8019c8;
+}
+.sidebar-menu ul li:hover .sidebar-menu ul li a{
+  color: #000;
+}
+.sidebar-menu ul li a{
+  width: 100%;
+  padding: 1%;
+  color: #fff;
+  font-size: 20px;
+}
+.side-bar button{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media all and (max-width: 992px){
+  .settings , .trade{
+    display: none;
+  }
+  .mobile-size{
+    display: block;
+  }
+}
+
+/*main*/
+.main{
+  padding: 2%;
+  height: 89vh;
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main h1{
+  text-align: left;
+}
+.home{
+  width: 100%;
+}
+.home td ,.home th{
+  text-align: center;
+}
+.home td img{
+  width: 60px;
+  height: 60px;
+}
+
+
+/*.single-expert*/
+.single-expert{
+  background-color: white;
+  padding: 1%;
+  width: 100%;
+}
+.single-expert .head{
+  padding: 1%;
+}
+/*.single-expert .chart > div > div ,*/
+/*.single-expert .chart > div > div> div ,*/
+/*.single-expert .chart > div > div> div svg,*/
+/*.single-expert .chart > div > div> div svg g{*/
+/*  width: 100% !important;*/
+/*}*/
